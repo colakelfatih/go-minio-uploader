@@ -15,10 +15,10 @@ import (
 
 func main() {
 	const (
-		YOURACCESSKEYID     = "US1WYQ83Z8I86JZPZ3ZPP"
-		YOURSECRETACCESSKEY = "X1jVAsxxbjcnxFdqIVuoZLiidK7h2sYm8JG0rEuD"
-		YOURENDPOINT        = "172.17.0.5:9000"
-		YOURBUCKET          = "h5p"
+		YOURACCESSKEYID     = "your-accesskey"
+		YOURSECRETACCESSKEY = "your-secretkey"
+		YOURENDPOINT        = "your-endpoint"
+		YOURBUCKET          = "your-bucket"
 	)
 
 	minioClient, err := minio.New(YOURENDPOINT, &minio.Options{
@@ -38,7 +38,7 @@ func main() {
 	}
 
 	//rng := rand.New(rand.NewSource(time.Now().UnixNano()))
-	// prefix := []byte("aaaaaaaaaaaaaaa")
+	// prefix := []byte("test")
 	// for i := range prefix {
 	// 	prefix[i] += byte(rng.Intn(25))
 	// }
